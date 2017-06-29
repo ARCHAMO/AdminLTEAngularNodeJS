@@ -13,9 +13,6 @@ import {LoginComponent} from './components/login/login.component';
 import {NotFoundComponent} from './components/not-found/not-found.component';
 import {MaestroComponent} from './components/maestro/maestro.component';
 import {InicioComponent} from './components/inicio/inicio.component';
-import {AuxiliarComponent} from './components/auxiliar/auxiliar.component';
-import {CrearAgenteComponent} from './components/agentes/crear-agente/crear-agente.component';
-import {ListarAgentesComponent} from './components/agentes/listar-agentes/listar-agentes.component';
 
 @NgModule({
     declarations: [
@@ -24,10 +21,6 @@ import {ListarAgentesComponent} from './components/agentes/listar-agentes/listar
         NotFoundComponent,
         MaestroComponent,
         InicioComponent,
-        AuxiliarComponent,
-        CrearAgenteComponent,
-        ListarAgentesComponent,
-
     ],
     imports: [
         BrowserModule,
@@ -36,11 +29,11 @@ import {ListarAgentesComponent} from './components/agentes/listar-agentes/listar
         CommonModule,
         ToastrModule.forRoot(),
         BrowserAnimationsModule,
-        BreadcrumbsModule,
         routing
     ],
     providers: [appRoutingProviders],
     bootstrap: [AppComponent]
 })
+
 export class AppModule {
 }
