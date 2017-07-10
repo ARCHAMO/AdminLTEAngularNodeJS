@@ -18,6 +18,7 @@ export class MaestroComponent implements OnInit {
     public identity;
     public token;
     public url: string;
+    public urlImagenUser: string;
 
     constructor(private _route: ActivatedRoute,
                 private _userService: UserService,
@@ -25,6 +26,7 @@ export class MaestroComponent implements OnInit {
         this.url = GLOBAL.url;
         this.identity = this._userService.getIdentity();
         this.token = this._userService.getToken()
+        this.urlImagenUser = GLOBAL.url + 'user/get-image/' + this.identity.image;
     }
 
     ngOnInit() {
