@@ -26,7 +26,7 @@ export class MaestroComponent implements OnInit {
         this.url = GLOBAL.url;
         this.identity = this._userService.getIdentity();
         this.token = this._userService.getToken()
-        this.urlImagenUser = GLOBAL.url + 'user/get-image/' + this.identity.image;
+        this.urlImagenUser = GLOBAL.url + 'user/get-imagen/' + this.identity.imagen;
     }
 
     ngOnInit() {
